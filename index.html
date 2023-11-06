@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Main Page</title>
 </head>
 <body>
-    <header>
+    <div class="title">
         <h1>My Travel Journal</h1>
         <p>Do you enjoy exploring and reading about different places? Come join me on this journey!</p>
+    </div>
+    <header>    
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,17 +21,24 @@
         </nav>
     </header>
     <section id="blog">
-        <h2>Travel Posts</h2>
-        <article class="blog_post">
-            <h3>Original restaurants, mountains and a lake: McCall - Idaho</h3>
-            <address class="author"><a rel="author" href="https://www.linkedin.com/in/baran-manti-8ba15422a/">Baran Manti</a></address>
-            <time datetime="2023-10-27">Oct 27, 2023</time>
+        <div>
+            <h2>Travel Posts</h2>
+        </div>
+        <article class="blog-post">
+            <div class="post-info">
+                <h3>Original restaurants, mountains and lakes: McCall - Idaho</h3>
+                <address class="author"><a rel="author" href="https://www.linkedin.com/in/baran-manti-8ba15422a/">Baran Manti</a></address>
+                <time datetime="2023-10-27">Oct 27, 2023</time>
+            </div>
+            <figure>
+                <img src="images/McCall-Idaho.jpg" alt="McCall">
+                <figcaption>https://www.oars.com/blog/how-to-spend-one-day-in-scenic-mccall-idaho/</figcaption>
+            </figure>
             <p>Last week I was in McCall, Idaho to visit my girlfriend. From the first day of my trip, McCall has amazed me with its nature and breathtaking views. I'm a senior student at Michigan State University, so I live in Michigan, and I also have a deep appreciation for Michigan's natural beauty. I'll be sharing more about it in a future post. Living in Michigan means becoming friends with the beautiful fall colors and snow, so spending a week in McCall wasn't very different. However, what sets McCall apart is the air quality and the stunning scenery. Due to its elevation of over 5000 feet, the air feels significantly fresher and crisper. The city itself is situated in a picturesque location right next to Payette Lake. When you stroll through the streets of McCall, you're greeted by the sight of Payette Lake and the mountains that stand behind it. I believe that it makes the whole atmosphere much more friendly and joyful.</p>
-            <p><img src="images/mccall.jpg" alt="McCall"></p>
-            <p><i>https://www.riverranchmccall.com/mccall</i></p>
+           
             <p>McCall also boasts some pretty good restaurants. Since hunting is so common in McCall, you have a high chance of finding restaurants that offer elk burgers or venison (deer meat). I was quite surprised the first time I saw an elk burger on the menu. As you can probably guess, I gave it a try. It's different from a beef burger but definitely worth trying.</p>
             <p>Here are some restaurants and coffee shops I've visited and their best foods (in my opinion):</p>
-            <table>
+            <table class="restaurants">
                 <tr>
                     <th>Restaurant</th>
                     <th>Best Food</th>
@@ -52,24 +62,33 @@
             </table>
 
         </article>
-        <article class="blog_post">
-            <h3>Woods, water and adrenaline: Tippecanoe - Ohio</h3>
-            <address class="author"><a rel="author" href="https://www.linkedin.com/in/baran-manti-8ba15422a/">Baran Manti</a></address>
-            <time datetime="2023-10-27">Aug 18, 2023</time>
+        <article class="blog-post">
+            <div class="post-info">
+                <h3>Woods, water and adrenaline: Tippecanoe - Ohio</h3>
+                <address class="author"><a rel="author" href="https://www.linkedin.com/in/baran-manti-8ba15422a/">Baran Manti</a></address>
+                <time datetime="2023-10-27">Aug 18, 2023</time>
+            </div>
+            <figure>
+                <img src="images/tappan2.jpg" alt="Tappan">
+                <figcaption>https://tappanpark.mwcd.org</figcaption>
+            </figure>
             <p>This week, I had the opportunity to spend a week with my cousin's family and my girlfriend in Tippecanoe, Ohio. My cousin and her family live in Cleveland, and I visit them regularly. The kids love me, and they decided to have a fun week together, inviting us to join them in Tippecanoe. Tippecanoe is a beautiful small town located two hours south of Cleveland. Most families in Tippecanoe have been there for generations, and due to this close-knit culture, seeing strangers in their neighborhoods is not common. We found ourselves in a similar situation when we stayed at an Airbnb in a small neighborhood with only twelve houses. The house was right next to a small lake, which was large enough for water sports like water skiing. It seemed like everyone in the neighborhood had their own outdoor toys, such as boats and ATVs.</p>
-            <img src="images/tappan.jpg" alt="Tappan">
-            <p><i>https://www.mwcd.org/places/lakes/tappan-lake</i></p>
+            
             <p>After seeing that watersports were quite common in the area, we decided to spend the weekend at Tappan Lake. Fortunately, one of my cousin's friends owned a boat, so we could have some fun. Tappan Lake featured a small beach with a café serving fast food and cold beverages. Many boats and people were out doing different water sports. It was my first experience with water skiing, which was a lot of fun, but I must admit that it took me a couple of tries to ski for 10 seconds without falling.</p>
         </article>
     </section>
-    <section>
-        <h2>Sign Up Form</h2>
-        <form>
-            <label>Sign up for my newsletter: 
+    <section id="sign-up">
+        <form class="sign-up-form">
+            <h2>Sign Up Form</h2>
+            <div class="form-container">
+                <label for="email">Sign up for my newsletter:</label>
                 <input type="email" id="email" name="email">
-            </label>
-            <button>Subscribe</button>
+                <button>Subscribe</button>
+            </div>
         </form>
     </section>
+    <footer>
+        <p>&copy; 2023 Baran Manti. All rights reserved.</p>
+    </footer>
 </body>
 </html>

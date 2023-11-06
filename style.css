@@ -1,0 +1,242 @@
+html{
+    background-color:#fff;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title{
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 1px;
+}
+
+header{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+}
+
+nav{
+    text-align: right;
+}
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #ff7300;
+}
+
+section h2{
+    padding-top: 20px;
+}
+
+#blog {
+    display: flex;
+    flex-direction: column;
+}
+
+#blog h2{
+    text-align: center;
+    font-style: italic;
+}
+
+.post-info h3{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.post-info address{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.post-info time{
+    float: left;
+    padding-left: 20px;
+}
+
+.blog-post {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f1ffdb;
+}
+
+.blog-post p{
+    padding: 20px 20px 0 20px;
+    line-height: 1.75em;
+}
+
+figure {
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+    float: right;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #888;
+}
+
+.restaurants {
+    width: 75%;
+    text-align: center;
+    border: 1px solid #333;
+    border-style:inset;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.restaurants th {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.restaurants tr {
+    border: 1px solid #333;
+}
+
+.restaurants tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.restaurants tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+.restaurants td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+.restaurants td:last-child {
+    color: #ff7300;
+    font-weight: bold;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #ff7300;
+}
+
+.author-about{
+    margin: 50px auto;
+}
+.author-image {
+    width: 300px; 
+    height: 300px; 
+    border-radius: 50%; 
+    display: block;
+    margin: 0 auto;
+  }
+
+.about{
+    background-color: #f1ffdb;
+    padding: 20px;
+    margin: 20px;
+}
+
+.places{
+    padding: 0 20px 20px 20px;
+    margin: 20px;
+}
+.list-places{
+    margin-left: 20px;
+}
+
+.contact-form {
+    margin: 75px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1ffdb;
+    color: #333;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 400px;
+  }
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+select {
+    height: 40px; 
+}
+
+footer{
+    text-align: center;
+    font-size: 14px;
+}
